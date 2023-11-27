@@ -26,6 +26,8 @@
          $prod[31:0] = $val1 * $val2;
          $quot[31:0] = $val1 / $val2;
          
+         $valid = $reset ? 0 : >>1$valid + 1;
+         
          $valid_or_rest = $valid || $reset;
       ?$valid_or_reset   
          @2
