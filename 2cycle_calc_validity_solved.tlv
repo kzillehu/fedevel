@@ -21,9 +21,9 @@
          $val2[31:0] = $rand2[3:0];
          $val1[31:0] = >>2$out;
          
-         $valid = $reset ? 0 : >>1$valid + 1;
+         //$valid = $reset ? 0 : >>1$valid + 1;
          
-         $valid_or_reset = $valid || $reset;
+         $valid_or_reset = >>1$valid + 1 || $reset;
 
       ?$valid_or_reset   
          @1 
