@@ -23,7 +23,7 @@
          
          $valid = $reset ? 0 : >>1$valid + 1;
          
-         $valid_or_rest = $valid || $reset;
+         $valid_or_reset = $valid || $reset;
 
       ?$valid_or_reset   
          @1 
